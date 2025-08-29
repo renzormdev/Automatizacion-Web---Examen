@@ -13,9 +13,9 @@ public class CartPage {
     private WebDriverWait wait;
 
     // Selectores del carrito
-    private By cartTitle = By.cssSelector("h1"); // El título de la página del carrito
-    private By cartTotal = By.cssSelector(".cart-summary .value"); // total del carrito
-    private By cartProducts = By.cssSelector(".cart-item"); // items del carrito
+    private By cartTitle = By.cssSelector("h1"); 
+    private By cartTotal = By.cssSelector(".cart-summary .value"); 
+    private By cartProducts = By.cssSelector(".cart-item"); 
 
     public CartPage(){
         this.driver = DriverManager.getDriver();
