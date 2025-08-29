@@ -1,0 +1,6 @@
+# Ignorar driver de Chrome
+drivers/chromedriver.exe
+
+# Ignorar carpetas de compilación de Java
+target/
+*.class
