@@ -18,7 +18,6 @@ public class DriverManager {
 
     @Before(order = 0)
     public void setUp(){
-        //Se ejecutará Automáticamente
         System.setProperty("webdriver.http.factory", "jdk-http-client");
         System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");
 
