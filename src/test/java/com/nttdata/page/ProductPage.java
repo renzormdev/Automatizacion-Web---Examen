@@ -65,7 +65,6 @@ public class ProductPage {
             WebElement addBtn = wait.until(ExpectedConditions.elementToBeClickable(addToCartBtn));
             addBtn.click();
 
-            // Espera que el popup aparezca
             wait.until(ExpectedConditions.visibilityOfElementLocated(popup));
 
             if (i < cantidad - 1) {
