@@ -19,7 +19,6 @@ public class ProductPage {
     private By popup = By.id("blockcart-modal");                    // corregido
     private By popupTotal = By.cssSelector(".cart-content .value");
 
-    // Selector actualizado para el botón "Finalizar compra"
     private By proceedBtn = By.xpath("//a[contains(@class,'btn') and contains(text(),'Finalizar compra')]");
 
     public ProductPage(){
