@@ -14,9 +14,9 @@ public class ProductPage {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    private By firstProduct = By.cssSelector(".product-miniature"); // corregido
-    private By addToCartBtn = By.cssSelector(".add-to-cart");       // corregido
-    private By popup = By.id("blockcart-modal");                    // corregido
+    private By firstProduct = By.cssSelector(".product-miniature"); 
+    private By addToCartBtn = By.cssSelector(".add-to-cart");       
+    private By popup = By.id("blockcart-modal");                   
     private By popupTotal = By.cssSelector(".cart-content .value");
 
     private By proceedBtn = By.xpath("//a[contains(@class,'btn') and contains(text(),'Finalizar compra')]");
@@ -73,7 +73,6 @@ public class ProductPage {
                 ));
                 closeBtn.click();
 
-                // Espera que desaparezca el popup antes del siguiente ciclo
                 wait.until(ExpectedConditions.invisibilityOfElementLocated(popup));
             }
         }
